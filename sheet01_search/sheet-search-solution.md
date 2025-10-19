@@ -352,7 +352,7 @@ Siehe vorherige Aufgabe. Wenn die geschätzten Restkosten von Frankfurt aus deut
 
 1. A* wählt immer den Knoten mit dem kleinsten $f(n) = g(n) + h(n)$
 
-2. Da $h(n)$ zulässig ist, gilt für den optimalen Zielknoten $n^*$: $f(n^*) = g(n^*) + h(n^*) = g(n^*)$
+2. Da $h(n)$ zulässig ist, gilt für den optimalen Zielknoten $n^*$: $`f(n^*) = g(n^*) + h(n^*) = g(n^*)`$
 
 3. Annahme: A* findet **zuerst** einen nicht-optimalen Zielknoten $n'$ mit höheren echten Kosten $g(n') \gt g(n^*)$.
 
