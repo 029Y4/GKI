@@ -39,7 +39,7 @@
 
 - Das Pferd kann ein oder zwei Wesen von einer Uferseite auf die andere transportieren, es muss dabei die Uferseite wechseln. Dieser Zustandswechsel ist wie folgt definiert:
 
-    - $ (\Delta E, \Delta O)$ mit:
+    - $(\Delta E, \Delta O)$ mit:
         - $\Delta E, \Delta O \epsilon \{0;1;2\}$ falls das Pferd von ***links nach rechts*** geht. 
         
         <br>
@@ -310,7 +310,7 @@ Im Folgenden wird der A* Algorithmus mit angepassten Werten für $`h(n)`$ für d
 
 ## Search.03: Dominanz (1P)
 
-*"Eine Heuristik $h_1(n)$ dominiert die Heuristik $h_2(n)$"* bedeutet, dass für alle Knoten $n$ gilt:
+*Eine Heuristik $h_1(n)$ dominiert die Heuristik $h_2(n)$* bedeutet, dass für alle Knoten $n$ gilt:
 
 ``` math
 h_1(n) \ge h_2(n)
