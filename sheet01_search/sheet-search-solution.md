@@ -310,7 +310,7 @@ Im Folgenden wird der A* Algorithmus mit angepassten Werten für $`h(n)`$ für d
 
 ## Search.03: Dominanz (1P)
 
-*Eine Heuristik $h_1(n)$ dominiert die Heuristik $h_2(n)$* bedeutet, dass für alle Knoten $n$ gilt:
+*Eine Heuristik* $h_1(n)$ *dominiert die Heuristik* $h_2(n)$ bedeutet, dass für alle Knoten $n$ gilt:
 
 ``` math
 h_1(n) \ge h_2(n)
