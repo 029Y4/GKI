@@ -204,7 +204,7 @@ Domain](https://en.wikipedia.org/wiki/en:public_domain))
 |5.|[ **WüEr 186+400=586**, <br>WüNü 103+537=640, <br>WüFrKas 390+460=850, <br>WüFrMaKarAu 632+0=632 ]|Erfurt wird expandiert, 0 Nachfolger|
 |6.|[ WüNü 103+537=640, <br>WüFrKas 390+460=850, <br>**WüFrMaKarAu 632+0=632** ]|Augsburg wird expandiert, 1 Nachfolger|
 |7.|[ **WüNü 103+537=640**, <br>WüFrKas 390+460=850, <br>WüFrMaKarAuMü 716+0=716 ]|Weg zum Ziel gefunden aber es gibt noch kürzere Wege in der Queue <br>$\rightarrow$ **Nürnberg** wird expandiert $\rightarrow$ **München** wird als Nachfolger gefunden <br>aber nicht hinzugefügt, weil bereits beim vorherigen Schritt<br> ein Weg nach München gefunden wurde.  |
-|8.|[ WüFrKas 390+460=850, <br>**WüFrMaKarAuMü 716+0=716**, ]|Ende, der erste Weg zum Ziel, der gefunden wurde ist die Lösung |
+|8.|[ WüFrKas 390+460=850, <br>WüFrMaKarAuMü 716+0=716, <br>**WüNüMü 103+167=270** ]|Ende, der erste Weg zum Ziel, der gefunden wurde ist die Lösung |
 
 <br>**$\rightarrow$ Ergebnis: Würzburg - Frankfurt - Mannheim - Karlsruhe - Augsburg - München:** $`217 + 85 + 80 + 250 + 84 = 716 km`$
 
@@ -222,14 +222,14 @@ Domain](https://en.wikipedia.org/wiki/en:public_domain))
 |-|-|-|-|
 |**Tiefensuche**|5|3|*892 km*|
 |**Breitensuche**|7|4|*270 km*|
-|**A\*-Suche**|8|4|*716 km*|
+|**A\*-Suche**|8|4|*270 km*|
 
 <br>
 
 - Die **Tiefensuche** kommt **schneller** und mit **weniger Speicheraufwand** zur Lösung als die Breiten- und die A\*-Suche.
-- **Breiten-** und **A\*-Suche** benötigen fast gleichen Zeit- und Speicheraufwand. (Anmerkung: Wenn A* einen Schritt früher abbrechen würde, wäre der Zeitaufwand gleich wie bei der Breitensuche)
-- Allerdings findet nur die **Breitensuche** die **optimale Lösung**, also den Weg **Würzburg - Nürnberg - München**.
-- Sofern die Heuristik zulässig ist, sollte **A\*** auch das optimale Ergebnis liefern $\rightarrow$ **Heuristik eventuell nicht zulässig?**
+- **Breiten-** und **A\*-Suche** benötigen fast gleichen Zeit- und Speicheraufwand.
+- Allerdings finden nur die **A\***- und die **Breitensuche** die **optimale Lösung**, also den Weg **Würzburg - Nürnberg - München**.
+- Sofern die Heuristik zulässig ist, sollte **A\*** auch das optimale Ergebnis potenziell mit weniger Aufwand liefern als die Breitensuche $\rightarrow$ **Heuristik eventuell nicht zulässig?**
 
 <br>
 
